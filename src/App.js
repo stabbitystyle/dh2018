@@ -3,7 +3,6 @@ import './App.css';
 import ImageCarousel from './ImageCarousel';
 import TopNavbar from './TopNavbar';
 import OptionButton from './OptionButton';
-import { Button } from 'react-bootstrap';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { Button, MenuItem, SplitButton } from 'react-bootstrap';
 
@@ -12,27 +11,12 @@ import { Button, MenuItem, SplitButton } from 'react-bootstrap';
 const MainPage = () => (
   <Router>
     <div>
-<<<<<<< HEAD
-=======
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <a><OptionButton><Link to="/about"></Link></OptionButton></a>
-        </li>
-      </ul>
->>>>>>> ade06b493ab4d069677196c6ce1d29a946d5fb45
 
     <hr />
 
       <Route exact path="/" component={Home} />
-<<<<<<< HEAD
       <Route path="/start" component={Start} />
-      <Route path="/settings" component={Settings} />
-=======
-      <Route path="/about" component={Options} />
->>>>>>> ade06b493ab4d069677196c6ce1d29a946d5fb45
+      <Route path="/options" component={Options} />
     </div>
   </Router>
 );
@@ -40,7 +24,7 @@ const MainPage = () => (
   const Home = () => (
     <div className="Home">
     <Link to="/start"><button type="button" class="btn btn-primary btn-lg">Start</button></Link>
-    <Link to="/settings"><button type="button" class="btn btn-primary btn-lg">Start</button></Link>
+    <Link to="/options"><button type="button" class="btn btn-primary btn-lg">Start</button></Link>
     </div>
   )
   const Start = () => (
@@ -87,7 +71,7 @@ const MainPage = () => (
               </SplitButton>
           <p></p>
 
-      <Button bsStyle="primary" bsSize="large" block>back </Button>
+      <Link to="/"><button type="button" class="btn btn-primary btn-lg btn-block">back</button></Link>
 
 
     </div>
