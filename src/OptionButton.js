@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 class Option extends Component {
     render(){
     return(
-        <Button href='#' bsSize="large">
+        <Button href='#' bsSize="large" bsStyle="primary">
             <span class="glyphicon glyphicon-cog" aria-hidden="true"> </span>
         </Button>
     )
