@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
 import TopNavbar from './TopNavbar';
-import { Button } from 'react-bootstrap';
 import BottomBar from './BottomBar';
 
 class App extends Component {
