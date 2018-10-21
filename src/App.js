@@ -4,7 +4,6 @@ import BottomBar from './BottomBar';
 import ImageCarousel from './ImageCarousel';
 import TopNavbar from './TopNavbar';
 import BookShelf from './bookShelf';
-
 class App extends Component {
   render() {
     return (
