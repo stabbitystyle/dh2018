@@ -9,7 +9,7 @@ class TopNavbar extends Component {
         return (
             <Navbar>
             <Navbar.Header>
-            <Link to="/"><Navbar.Brand href="#">Cool Dubhacks Project</Navbar.Brand></Link>
+            <Link to="/"><Navbar.Brand href="#">DubReader</Navbar.Brand></Link>
             </Navbar.Header>
             <Nav>
                 <Link to="/"><button type="button" class="btn btn-primary btn-lg">Home</button></Link>
