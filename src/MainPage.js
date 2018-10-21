@@ -8,7 +8,7 @@ class MainPage extends Component{
         <ButtonToolbar>
             <Button>Book shelf</Button>
             <Button>Start</Button>
-            <Button>Options</Button>
+            <OptionButton><Link to="/settings"></Link></OptionButton>
         </ButtonToolbar>
     }
 
