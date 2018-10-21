@@ -5,10 +5,28 @@ import TopNavbar from './TopNavbar';
 import OptionButton from './OptionButton';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
+const MainPage = () => (
+  <Router>
+    <div>
+      <ul>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <a><OptionButton><Link to="/settings"></Link></OptionButton></a>
+        </li>
+      </ul>
+
+      <hr />
+
+      <Route exact path="/" component={Home} />
+      <Route path="/about" component={Settings} />
+    </div>
+  </Router>
+);
+
+  const Home = () => (
+    <div className="App">
       <TopNavbar></TopNavbar>
         <header className="App-header">
           <ImageCarousel></ImageCarousel>
@@ -22,8 +40,16 @@ class App extends Component {
         </header>
         <OptionButton/>
       </div>
-    );
-  }
-}
+  )
 
-export default App;
+  const Settings = () => (
+    <div>
+      Hello!
+    </div>
+  )
+
+
+
+
+
+export default MainPage;
