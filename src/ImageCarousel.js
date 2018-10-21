@@ -9,7 +9,7 @@ class ImageCarousel extends Component {
     return (
       <div>
       {/* Can do some sort of better CSS thing than the fixed width/height.  I suck tho, so idk */}
-      <Carousel interval={null} indicators={false}>
+      <Carousel interval={null} indicators={true}>
         <Carousel.Item>
           <img class="img-responsive center-block" width={900} height={500} alt="900x500" src={require("./resources/img/public-domain-stock-graphics-vintage-childrens-books-a-frog-he-would-a-wooing-go-0001.jpg")}/>
         </Carousel.Item>

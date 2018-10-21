@@ -3,29 +3,31 @@ import './App.css';
 import ImageCarousel from './ImageCarousel';
 import TopNavbar from './TopNavbar';
 import OptionButton from './OptionButton';
+import { Button } from 'react-bootstrap';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+
+
 
 const MainPage = () => (
   <Router>
     <div>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <a><OptionButton><Link to="/settings"></Link></OptionButton></a>
-        </li>
-      </ul>
 
-      <hr />
+    <hr />
 
       <Route exact path="/" component={Home} />
-      <Route path="/about" component={Settings} />
+      <Route path="/start" component={Start} />
+      <Route path="/settings" component={Settings} />
     </div>
   </Router>
 );
 
   const Home = () => (
+    <div className="Home">
+    <Link to="/start"><button type="button" class="btn btn-primary btn-lg">Start</button></Link>
+    <Link to="/settings"><button type="button" class="btn btn-primary btn-lg">Start</button></Link>
+    </div>
+  )
+  const Start = () => (
     <div className="App">
       <TopNavbar></TopNavbar>
         <header className="App-header">
@@ -38,7 +40,6 @@ const MainPage = () => (
           >
           </a>
         </header>
-        <OptionButton/>
       </div>
   )
 
