@@ -3,6 +3,7 @@ import './App.css';
 import ImageCarousel from './ImageCarousel';
 import TopNavbar from './TopNavbar';
 import OptionButton from './OptionButton';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 class App extends Component {
   render() {
