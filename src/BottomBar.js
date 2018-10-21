@@ -12,7 +12,7 @@ class BottomBar extends Component {
                         <span class="glyphicon glyphicon-fast-backward" aria-hidden="true"> </span>
                         </Button>
                     <Button href='#'>
-                        <Link to="/start2"><span class="glyphicon glyphicon-repeat" aria-hidden="true"> </span></Link>
+                        <Link to="/start"><span class="glyphicon glyphicon-repeat" aria-hidden="true"> </span></Link>
                         </Button>
                     <Button href='#'>
                         <span class="glyphicon glyphicon-fast-forward" aria-hidden="true"> </span>
