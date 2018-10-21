@@ -7,8 +7,8 @@ class TopNavbar extends Component {
         return (
             <Navbar>
             <Navbar.Header>
-                <Navbar.Brand>
-                <a href="#">Cool Dubhacks Project</a>
+                <Navbar.Brand href="#">
+                Cool Dubhacks Project
                 </Navbar.Brand>
             </Navbar.Header>
             <Nav>
