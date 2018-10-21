@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './TopNavbar.css';
-import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
-import MainPage from './App';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { Navbar, Nav } from 'react-bootstrap';
+
+import { Link } from "react-router-dom";
 
 class TopNavbar extends Component {
     render() {

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import ImageCarousel from './ImageCarousel';
 import TopNavbar from './TopNavbar';
-import OptionButton from './OptionButton';
+
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { Button, MenuItem, SplitButton } from 'react-bootstrap';
 import AudioPlayer from './soundPlayer';
@@ -46,8 +46,7 @@ const MainPage = () => (
     )
 
     const wellStyles = { maxWidth: 600, margin: '0 auto 10px' };
-    const BUTTONS = ['Default', 'Primary', 'Success', 'Info', 'Warning', 'Danger'];
-
+    
 
     const Options = () => (
         <div className="well" style={wellStyles}>

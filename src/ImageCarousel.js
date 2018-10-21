@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './ImageCarousel.css';
-import BottomBar from './BottomBar';
+
 import { Carousel} from 'react-bootstrap';
 import Sound from 'react-sound';
 import mp3_file1 from './resources/sound/output_page1.mp3';
@@ -122,10 +122,6 @@ class ImageCarousel extends Component {
         </Carousel.Item>
       </Carousel>
       {/* Don't know what I wanna do with ButtonGroup yet.  Could maybe descend it. */}
-<<<<<<< HEAD
-=======
-      {/* <BottomBar/> */}
->>>>>>> origin/final_working
       </div>
     )
   }
