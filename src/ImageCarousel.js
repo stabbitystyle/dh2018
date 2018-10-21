@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './ImageCarousel.css';
 import BottomBar from './BottomBar';
-import { Carousel, ButtonGroup, Button } from 'react-bootstrap';
+import { Carousel} from 'react-bootstrap';
 
 class ImageCarousel extends Component {
   //imageBase = "./resources/img/public-domain-stock-graphics-vintage-childrens-books-a-frog-he-would-a-wooing-go-"
