@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import ImageCarousel from './ImageCarousel';
 import TopNavbar from './TopNavbar';
+import OptionButton from './OptionButton';
 
 class App extends Component {
   render() {
@@ -18,6 +19,7 @@ class App extends Component {
           >
           </a>
         </header>
+        <OptionButton/>
       </div>
     );
   }
