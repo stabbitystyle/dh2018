@@ -49,21 +49,21 @@ const MainPage = () => (
 
   const Options = () => (
     <div className="well" style={wellStyles}>
-        <Button bsStyle="primary" bsSize="large" >Select Read In Language </Button>
-          <SplitButton title="choose here">
+        <Button bsStyle="primary" bsSize="large" justified>Select Read In Language </Button>
+          <SplitButton bsStyle="Info" bsSize="large" justified title="choose here">
               <MenuItem eventKey="2">English</MenuItem>
               <MenuItem eventKey="3">Spanish</MenuItem>
               <MenuItem eventKey="4">French</MenuItem>
               </SplitButton>
             <p></p>
-        <Button bsStyle="primary" bsSize="large" >Select Output language</Button>
+        <Button bsStyle="primary" bsSize="large" justified >Select Output language</Button>
           <SplitButton title="choose here">
               <MenuItem eventKey="2">English</MenuItem>
               <MenuItem eventKey="3">Spanish</MenuItem>
               <MenuItem eventKey="4">French</MenuItem>
               </SplitButton>
           <p></p>
-      <Button bsStyle="primary" bsSize="large" >Select Narrator </Button>
+      <Button bsStyle="primary" bsSize="large" justified>Select Narrator </Button>
           <SplitButton title="choose here">
               <MenuItem eventKey="2">Morgan Freeman</MenuItem>
               <MenuItem eventKey="3">David Attenborough</MenuItem>
