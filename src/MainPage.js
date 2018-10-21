@@ -1,5 +1,6 @@
 import { Button } from 'react-bootstrap';
 import React, { Component } from 'react';
+import OptionButton from './OptionButton';
 
 
 class MainPage extends Component{
