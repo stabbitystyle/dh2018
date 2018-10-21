@@ -93,7 +93,6 @@ class ImageCarousel extends Component {
         </Carousel.Item>
       </Carousel>
       {/* Don't know what I wanna do with ButtonGroup yet.  Could maybe descend it. */}
-      <BottomBar/>
       </div>
     )
   }

@@ -5,6 +5,7 @@ import TopNavbar from './TopNavbar';
 import OptionButton from './OptionButton';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { Button, MenuItem, SplitButton } from 'react-bootstrap';
+import AudioPlayer from './soundPlayer';
 
 
 
@@ -23,6 +24,7 @@ const MainPage = () => (
 
     const Home = () => (
         <div className="Home">
+        <AudioPlayer></AudioPlayer>
         <Link to="/start"><button type="button" class="btn btn-primary btn-lg">Start</button></Link>
         <Link to="/options"><button type="button" class="btn btn-primary btn-lg">Options</button></Link>
         </div>
