@@ -4,8 +4,8 @@ import ImageCarousel from './ImageCarousel';
 import TopNavbar from './TopNavbar';
 
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import { Button, MenuItem, SplitButton } from 'react-bootstrap';
-import AudioPlayer from './soundPlayer';
+import { Button, MenuItem, SplitButton, Jumbotron } from 'react-bootstrap';
+import image1 from './book.png';
 
 
 
@@ -24,23 +24,25 @@ const MainPage = () => (
 
     const Home = () => (
         <div className="Home">
-        <AudioPlayer></AudioPlayer>
-        <Link to="/start"><button type="button" class="btn btn-primary btn-lg">Start</button></Link>
-        <Link to="/options"><button type="button" class="btn btn-primary btn-lg">Options</button></Link>
-        </div>
+            <Jumbotron>
+                <h1 class="text-center">DubReader</h1>
+                    <p class="text-center">
+                        Smart Reader through Google Cloud API
+                    </p>
+                <p class="text-center">
+                    <Link to="/start"><button type="button" class="btn btn-primary btn-lg start">Start</button></Link>
+                    <Link to="/options"><button type="button" class="btn btn-primary btn-lg">Options</button></Link>
+                </p>
+            </Jumbotron>
+    </div>
     )
+
+
     const Start = () => (
         <div className="App">
         <TopNavbar></TopNavbar>
             <header className="App-header">
             <ImageCarousel></ImageCarousel>
-            <a
-                className="App-link"
-                href="https://reactjs.org"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-            </a>
             </header>
         </div>
     )
