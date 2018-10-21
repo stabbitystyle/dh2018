@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { Button } from 'react-bootstrap';
+import { getVoiceFromImage } from './server/readPictureBook';
 
 class App extends Component {
   render() {
@@ -12,7 +13,7 @@ class App extends Component {
           <p>
             Edit <code>src/App.js</code> and save to reload.
           </p>
-          <Button>HERE</Button>
+          <Button onClick={() => getVoiceFromImage()}>HERE</Button>
           <a
             className="App-link"
             href="https://reactjs.org"
