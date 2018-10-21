@@ -13,7 +13,6 @@ const MainPage = () => (
     <Router>
         <div>
 
-        <hr />
 
         <Route exact path="/" component={Home} />
         <Route path="/start" component={Start} />
@@ -53,33 +52,32 @@ const MainPage = () => (
 
     const Options = () => (
         <div className="well" style={wellStyles}>
-            <Button bsStyle="primary" bsSize="large" justified>Select Read In Language </Button>
-            <SplitButton bsStyle="Info" bsSize="large" justified title="choose here">
+        <h1 className="text-center">Options</h1>
+            <div className="text-center"><SplitButton bsStyle="Info" bsSize="large" justified title="Selcect Read In Language">
                 <MenuItem eventKey="2">English</MenuItem>
                 <MenuItem eventKey="3">Spanish</MenuItem>
                 <MenuItem eventKey="4">French</MenuItem>
-                </SplitButton>
+                </SplitButton></div>
                 <p></p>
-            <Button bsStyle="primary" bsSize="large" justified >Select Output language</Button>
-            <SplitButton title="choose here">
+            <div className="text-center"><SplitButton bsStyle="Info" bsSize="large" justified title="Select Output language">
                 <MenuItem eventKey="2">English</MenuItem>
                 <MenuItem eventKey="3">Spanish</MenuItem>
                 <MenuItem eventKey="4">French</MenuItem>
-                </SplitButton>
+                </SplitButton></div>
             <p></p>
-        <Button bsStyle="primary" bsSize="large" justified>Select Narrator </Button>
-            <SplitButton title="choose here">
+            <div className="text-center"><SplitButton bsStyle="Info" bsSize="large" justified title="Choose Narrator        ">
                 <MenuItem eventKey="2">Morgan Freeman</MenuItem>
                 <MenuItem eventKey="3">David Attenborough</MenuItem>
                 <MenuItem eventKey="4">James Earl Jones</MenuItem>
-                </SplitButton>
+                </SplitButton></div>
             <p></p>
 
-        <Link to="/"><button type="button" class="btn btn-primary btn-lg btn-block">back</button></Link>
+        <div className="text-center"><Link to="/"><button type="button" class="btn btn-primary btn-lg">back</button></Link></div>
+        <div className="text-center"><Link to="/start"><button type="button" class="btn btn-primary btn-lg">start</button></Link></div>
 
 
         </div>
-    )
+    ) 
 
 
 
