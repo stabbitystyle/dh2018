@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import TopNavbar from './TopNavbar';
 import BottomBar from './BottomBar';
+import ImageCarousel from './ImageCarousel';
 
 class App extends Component {
   render() {
@@ -9,9 +10,7 @@ class App extends Component {
       <div className="App">
         <TopNavbar></TopNavbar>
         <header className="App-header">
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
+          <ImageCarousel></ImageCarousel>
           <BottomBar/>
           <a
             className="App-link"
