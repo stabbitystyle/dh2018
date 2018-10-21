@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { Button } from 'react-bootstrap';
+import BottomBar from './BottomBar';
 
 class App extends Component {
   render() {
@@ -12,7 +12,7 @@ class App extends Component {
           <p>
             Edit <code>src/App.js</code> and save to reload.
           </p>
-          <Button>HERE</Button>
+          <BottomBar/>
           <a
             className="App-link"
             href="https://reactjs.org"
