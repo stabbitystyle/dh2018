@@ -3,8 +3,7 @@ import './ImageCarousel.css';
 import { Carousel } from 'react-bootstrap';
 
 class ImageCarousel extends Component {
-  imageBase = "./resources/img/public-domain-stock-graphics-vintage-childrens-books-a-frog-he-would-a-wooing-go-"
-  for
+  //imageBase = "./resources/img/public-domain-stock-graphics-vintage-childrens-books-a-frog-he-would-a-wooing-go-"
   render() {
     return (
       <Carousel>
