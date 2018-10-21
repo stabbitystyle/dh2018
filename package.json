@@ -2,6 +2,14 @@
   "name": "read_to_speek",
   "version": "0.1.0",
   "private": true,
+  "proxy": {
+    "/text/*" : {
+      "target" : "http://localhost:5000"
+    },
+    "/voice/*" : {
+      "target" : "http://localhost:5000"
+    }
+  },
   "dependencies": {
     "ajv": "^6.5.4",
     "bootstrap": "^3.3.7",

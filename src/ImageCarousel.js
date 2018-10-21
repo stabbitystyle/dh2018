@@ -3,6 +3,29 @@ import './ImageCarousel.css';
 import { Carousel, ButtonGroup, Button } from 'react-bootstrap';
 
 class ImageCarousel extends Component {
+  constructor() {
+    super();
+    this.state = {
+      page: 1,
+      text: null
+    }
+  }
+
+  setText = function(num) {
+    this.setState({ page: this.state.page++ });
+
+    // fetch(`localhost:5000/text/${num}`)
+    fetch('http://localhost:5000/text')
+    .then(res => {
+        const result = res.text();
+        console.log(result);
+        return result
+     })
+    .then(text => {
+      this.setState({ text })
+   });
+  }
+
   //imageBase = "./resources/img/public-domain-stock-graphics-vintage-childrens-books-a-frog-he-would-a-wooing-go-"
   render() {
     return (
@@ -95,7 +118,7 @@ class ImageCarousel extends Component {
       <ButtonGroup justified>
         <Button href="#">Back</Button>
         <Button href="#">Pause</Button>
-        <Button href="#">Forward</Button>
+        <Button onClick={() => this.setText(this.state.page)} >Forward</Button>
       </ButtonGroup>
       </div>
     )
