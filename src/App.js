@@ -5,18 +5,34 @@ import TopNavbar from './TopNavbar';
 import OptionButton from './OptionButton';
 import { Button } from 'react-bootstrap';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { Button, MenuItem, SplitButton } from 'react-bootstrap';
 
 
 
 const MainPage = () => (
   <Router>
     <div>
+<<<<<<< HEAD
+=======
+      <ul>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <a><OptionButton><Link to="/about"></Link></OptionButton></a>
+        </li>
+      </ul>
+>>>>>>> ade06b493ab4d069677196c6ce1d29a946d5fb45
 
     <hr />
 
       <Route exact path="/" component={Home} />
+<<<<<<< HEAD
       <Route path="/start" component={Start} />
       <Route path="/settings" component={Settings} />
+=======
+      <Route path="/about" component={Options} />
+>>>>>>> ade06b493ab4d069677196c6ce1d29a946d5fb45
     </div>
   </Router>
 );
@@ -43,9 +59,37 @@ const MainPage = () => (
       </div>
   )
 
-  const Settings = () => (
-    <div>
-      Hello!
+  const wellStyles = { maxWidth: 600, margin: '0 auto 10px' };
+  const BUTTONS = ['Default', 'Primary', 'Success', 'Info', 'Warning', 'Danger'];
+
+
+  const Options = () => (
+    <div className="well" style={wellStyles}>
+        <Button bsStyle="primary" bsSize="large" >Select Read In Language </Button>
+          <SplitButton title="choose here">
+              <MenuItem eventKey="2">English</MenuItem>
+              <MenuItem eventKey="3">Spanish</MenuItem>
+              <MenuItem eventKey="4">French</MenuItem>
+              </SplitButton>
+            <p></p>
+        <Button bsStyle="primary" bsSize="large" >Select Output language</Button>
+          <SplitButton title="choose here">
+              <MenuItem eventKey="2">English</MenuItem>
+              <MenuItem eventKey="3">Spanish</MenuItem>
+              <MenuItem eventKey="4">French</MenuItem>
+              </SplitButton>
+          <p></p>
+      <Button bsStyle="primary" bsSize="large" >Select Narrator </Button>
+          <SplitButton title="choose here">
+              <MenuItem eventKey="2">Morgan Freeman</MenuItem>
+              <MenuItem eventKey="3">David Attenborough</MenuItem>
+              <MenuItem eventKey="4">James Earl Jones</MenuItem>
+              </SplitButton>
+          <p></p>
+
+      <Button bsStyle="primary" bsSize="large" block>back </Button>
+
+
     </div>
   )
 
