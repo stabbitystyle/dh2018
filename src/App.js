@@ -12,14 +12,6 @@ class App extends Component {
         <header className="App-header">
           <ImageCarousel></ImageCarousel>
           <BottomBar/>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
         </header>
       </div>
     );
