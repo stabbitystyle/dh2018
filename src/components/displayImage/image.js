@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import image1 from './components/displayImage/images/spongebob.jpg'
-import image2 from './components/displayImage/images/spongebob2.jpg'
-import image3 from './components/displayImage/images/image3.png'
+import image1 from './images/spongebob.jpg'
+import image2 from './images/spongebob2.jpg'
+import image3 from './images/image3.png'
 
-class App extends Component {
+class Image extends Component {
     render() {
         return (
         <div>
@@ -17,10 +17,10 @@ class App extends Component {
                         <div class="carousel-item active">
                             <img class="d-block w-100" src={image1} alt="First slide"/>
                         </div>
-                        <div class="carousel-item">
+                        <div class="item">
                             <img class ="d-block w-100" src={image2} alt="Second slide"/>
                         </div>
-                        <div class ="carousel-item">
+                        <div class ="item">
                             <img class ="d-block w-100" src={image3} alt="Third slide"/>
                         </div>
                     </div>
@@ -34,11 +34,11 @@ class App extends Component {
                     <span class="sr-only">Next</span>
                 </a>
             </div>
-            </div>
+        </div>
 
 
-            );
-        }
+        );
     }
+}
 
-export default App;
+export default Image;
