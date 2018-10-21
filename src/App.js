@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
-import BottomBar from './BottomBar';
 import ImageCarousel from './ImageCarousel';
 import TopNavbar from './TopNavbar';
-import BookShelf from './bookShelf';
+
 class App extends Component {
   render() {
     return (
@@ -11,7 +10,6 @@ class App extends Component {
       <TopNavbar></TopNavbar>
         <header className="App-header">
           <ImageCarousel></ImageCarousel>
-<<<<<<< HEAD
           <a
             className="App-link"
             href="https://reactjs.org"
@@ -19,12 +17,7 @@ class App extends Component {
             rel="noopener noreferrer"
           >
           </a>
-          <BookShelf/>
-=======
-          <BottomBar/>
->>>>>>> origin/Ryan-dev
         </header>
-        <BottomBar/>
       </div>
     );
   }

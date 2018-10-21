@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './ImageCarousel.css';
+import BottomBar from './BottomBar';
 import { Carousel, ButtonGroup, Button } from 'react-bootstrap';
 
 class ImageCarousel extends Component {
@@ -92,11 +93,7 @@ class ImageCarousel extends Component {
         </Carousel.Item>
       </Carousel>
       {/* Don't know what I wanna do with ButtonGroup yet.  Could maybe descend it. */}
-      <ButtonGroup justified>
-        <Button href="#">Back</Button>
-        <Button href="#">Pause</Button>
-        <Button href="#">Forward</Button>
-      </ButtonGroup>
+      <BottomBar/>
       </div>
     )
   }
